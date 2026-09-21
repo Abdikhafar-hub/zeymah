@@ -1,4 +1,4 @@
-# AbayaButh Premium Storefront
+# Zeymah Premium Storefront
 
 An editorial modest-fashion storefront with collection browsing, product details, search, wishlist, cart interactions, and responsive shopping layouts.
 
