@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "AbayaButh Premium Storefront"
+description = "A premium modest-fashion storefront with editorial merchandising, collection browsing, product detail pages, search, wishlist, cart interactions, and responsive layouts inspired by the authorized AbayaButh reference site."
+version = "1.0.0"
+id = "artifacts/abayabuth-storefront"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18767
+
+[services.development]
+run = "pnpm --filter @workspace/abayabuth-storefront run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/abayabuth-storefront", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/abayabuth-storefront/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18767"
+BASE_PATH = "/"

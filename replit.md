@@ -1,6 +1,6 @@
-# [Project name]
+# AbayaButh Premium Storefront
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+An editorial modest-fashion storefront with collection browsing, product details, search, wishlist, cart interactions, and responsive shopping layouts.
 
 ## Run & Operate
 
@@ -22,23 +22,33 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/abayabuth-storefront/src/App.tsx` — wouter routes and shared storefront provider.
+- `artifacts/abayabuth-storefront/src/components/storefront.tsx` — header, overlays, cart, product cards, footer, and shared shopping state.
+- `artifacts/abayabuth-storefront/src/data/catalog.ts` — local typed catalog and reference-derived image paths.
+- `artifacts/abayabuth-storefront/src/pages/` — home, collection, product detail, and not-found pages.
+- `artifacts/abayabuth-storefront/src/index.css` — storefront design tokens and responsive styling.
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- The first storefront build uses local catalog data and React state so the shopping experience is usable without an external commerce integration.
+- Reference screenshots are cropped into local assets before use so browser chrome and page framing do not appear inside product and campaign imagery.
+- Wouter routes are kept flat and explicit so collection and product paths work correctly through the artifact preview prefix.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+- Homepage with campaign hero, category tiles, new arrivals, editorial storytelling, styling inspiration, gifting, newsletter, and retailer footer.
+- Collection pages for abayas and hijabs with category navigation, filtering controls, availability toggle, sorting, product cards, wishlist buttons, and sold-out states.
+- Product detail page with gallery, color selection, quantity updates, add-to-bag, wishlist, installment messaging, and expandable information sections.
+- Search overlay, mobile navigation, cart drawer, newsletter feedback, and responsive layouts.
 
 ## User preferences
 
-_Populate as you build — explicit user instructions worth remembering across sessions._
+- User authorized an exact visual/content rebuild of the provided AbayaButh reference and intends to publish the storefront.
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- The storefront workflow supplies `PORT` and `BASE_PATH`; local production builds need both variables set.
+- Images in `public/reference/` are intentionally cropped derivatives of the supplied screenshots; keep them local rather than hotlinking the live site.
 
 ## Pointers
 
