@@ -1,3 +1,66 @@
-<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="180" height="180" rx="36" fill="#FF3C00"/>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Luxury Deep Forest Green Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#021c1a" />
+      <stop offset="45%" stop-color="#052c28" />
+      <stop offset="100%" stop-color="#083833" />
+    </linearGradient>
+
+    <!-- Warm Champagne Gold Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5e8cf" />
+      <stop offset="35%" stop-color="#dfcaa2" />
+      <stop offset="70%" stop-color="#c5a872" />
+      <stop offset="100%" stop-color="#e8d8ba" />
+    </linearGradient>
+
+    <!-- Subtle Golden Glow Filter -->
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- Luxury Squircle Outer Container -->
+  <rect width="512" height="512" rx="118" fill="url(#bgGrad)" />
+
+  <!-- Delicate Gold Inner Border Inset -->
+  <rect x="28" y="28" width="456" height="456" rx="94" fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-opacity="0.4" />
+  <rect x="36" y="36" width="440" height="440" rx="86" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-opacity="0.2" />
+
+  <!-- Top-Right Luxury Sparkle Accent -->
+  <path d="M 405 107 C 405 121 415 131 429 131 C 415 131 405 141 405 155 C 405 141 395 131 381 131 C 395 131 405 121 405 107 Z" fill="url(#goldGrad)" opacity="0.85" />
+
+  <!-- Bottom-Left Subtle Sparkle Accent -->
+  <path d="M 107 357 C 107 367 114 374 124 374 C 114 374 107 381 107 391 C 107 381 100 374 90 374 C 100 374 107 367 107 357 Z" fill="url(#goldGrad)" opacity="0.65" />
+
+  <!-- Refined Editorial 'Z' Monogram in Champagne Gold with Shadow -->
+  <g filter="url(#subtleGlow)">
+    <!-- Main Letter Z Path -->
+    <path
+      d="
+        M 138 152
+        H 374
+        V 176
+        L 214 354
+        H 358
+        C 370 354 376 348 379 336
+        H 388
+        V 368
+        H 124
+        V 344
+        L 286 166
+        H 154
+        C 142 166 136 172 133 184
+        H 124
+        V 152
+        H 138
+        Z
+      "
+      fill="url(#goldGrad)"
+    />
+
+    <!-- Elegant Center Diamond Motif on Z Stem -->
+    <polygon points="250,260 256,252 262,260 256,268" fill="#ffffff" opacity="0.9" />
+  </g>
 </svg>
