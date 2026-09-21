@@ -22,11 +22,11 @@ An editorial modest-fashion storefront with collection browsing, product details
 
 ## Where things live
 
-- `artifacts/abayabuth-storefront/src/App.tsx` — wouter routes and shared storefront provider.
-- `artifacts/abayabuth-storefront/src/components/storefront.tsx` — header, overlays, cart, product cards, footer, and shared shopping state.
-- `artifacts/abayabuth-storefront/src/data/catalog.ts` — local typed catalog and reference-derived image paths.
-- `artifacts/abayabuth-storefront/src/pages/` — home, collection, product detail, and not-found pages.
-- `artifacts/abayabuth-storefront/src/index.css` — storefront design tokens and responsive styling.
+- `artifacts/zeymah-storefront/src/App.tsx` — wouter routes and shared storefront provider.
+- `artifacts/zeymah-storefront/src/components/storefront.tsx` — header, overlays, cart, product cards, footer, and shared shopping state.
+- `artifacts/zeymah-storefront/src/data/catalog.ts` — local typed catalog and reference-derived image paths.
+- `artifacts/zeymah-storefront/src/pages/` — home, collection, product detail, and not-found pages.
+- `artifacts/zeymah-storefront/src/index.css` — storefront design tokens and responsive styling.
 
 ## Architecture decisions
 
@@ -43,7 +43,7 @@ An editorial modest-fashion storefront with collection browsing, product details
 
 ## User preferences
 
-- User authorized an exact visual/content rebuild of the provided AbayaButh reference and intends to publish the storefront.
+- User authorized the Zeymah modest luxury storefront and intends to publish the storefront.
 
 ## Gotchas
 

@@ -5,9 +5,9 @@
   "license": "MIT",
   "scripts": {
     "preinstall": "sh -c 'rm -f package-lock.json yarn.lock;'",
-    "dev": "npm --prefix artifacts/abayabuth-storefront run dev",
+    "dev": "npm --prefix artifacts/zeymah-storefront run dev",
     "dev:api": "npm --prefix artifacts/api-server run dev",
-    "build": "pnpm --filter @workspace/abayabuth-storefront run build && rm -rf dist && cp -r artifacts/abayabuth-storefront/dist ./dist",
+    "build": "pnpm --filter @workspace/zeymah-storefront run build && rm -rf dist && cp -r artifacts/zeymah-storefront/dist ./dist",
     "typecheck:libs": "tsc --build",
     "typecheck": "pnpm run typecheck:libs && pnpm -r --filter \"./artifacts/**\" --filter \"./scripts\" --if-present run typecheck"
   },
