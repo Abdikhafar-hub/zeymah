@@ -1,9 +1,9 @@
 kind = "web"
 previewPath = "/"
-title = "AbayaButh Premium Storefront"
-description = "A premium modest-fashion storefront with editorial merchandising, collection browsing, product detail pages, search, wishlist, cart interactions, and responsive layouts inspired by the authorized AbayaButh reference site."
+title = "Zeymah Premium Storefront"
+description = "A premium modest-fashion storefront with editorial merchandising, collection browsing, product detail pages, search, wishlist, cart interactions, and responsive layouts for Zeymah."
 version = "1.0.0"
-id = "artifacts/abayabuth-storefront"
+id = "artifacts/zeymah-storefront"
 router = "path"
 
 [[services]]
@@ -12,12 +12,12 @@ paths = [ "/" ]
 localPort = 18767
 
 [services.development]
-run = "pnpm --filter @workspace/abayabuth-storefront run dev"
+run = "pnpm --filter @workspace/zeymah-storefront run dev"
 
 [services.production]
-build = [ "pnpm", "--filter", "@workspace/abayabuth-storefront", "run", "build" ]
+build = [ "pnpm", "--filter", "@workspace/zeymah-storefront", "run", "build" ]
 serve = "static"
-publicDir = "artifacts/abayabuth-storefront/dist/public"
+publicDir = "artifacts/zeymah-storefront/dist/public"
 
 [[services.production.rewrites]]
 from = "/*"
